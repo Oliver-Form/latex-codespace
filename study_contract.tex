@@ -1,17 +1,20 @@
 \documentclass[12pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{enumitem}
-\usepackage{fancyhdr}
-\usepackage{lastpage}
 \usepackage{xcolor}
+\usepackage{titling}
+\usepackage{totcount}
+\usepackage{fancyhdr}
+
+\regtotcounter{page}
 
 \pagestyle{fancy}
 \lhead{Study Contract}
-\rhead{Page \thepage\ of \pageref{LastPage}}
+\rhead{Page \thepage\ of \total{page}}
 \cfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
 
-\title{\textbf{STUDY COMMITMENT AND BEVERAGE PROCUREMENT CONTRACT}}
-\subtitle{\vspace{0.3cm}\textit{A Bilateral Covenant for Mutual Academic Accountability and Conditional Pecuniary Obligation}}
+\title{\textbf{STUDY COMMITMENT AND BEVERAGE PROCUREMENT CONTRACT}\\\vspace{0.3cm}\\{\normalfont\itshape A Bilateral Covenant for Mutual Academic Accountability and Conditional Pecuniary Obligation}}
 \author{}
 \date{}
 
